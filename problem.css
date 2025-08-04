@@ -1,0 +1,200 @@
+/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #fff;
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* Section Formatting */
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  padding: 6rem 1.5rem 3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Content Container */
+.snap-section > div {
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.8s ease both;
+  animation-delay: 0.3s;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+/* Hero Section Enhancements */
+.snap-section.hero {
+  background: linear-gradient(135deg, #e0f2ff, #f4f7fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+}
+
+.snap-section.hero h1 {
+  font-size: 2.6rem;
+  color: #002244;
+  margin-bottom: 1rem;
+}
+
+.snap-section.hero p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Decorative horizontal line */
+.divider {
+  height: 4px;
+  width: 80px;
+  background-color: #00bcd4;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/* Fade-in animation on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section spacing for multiple snap sections */
+.snap-section + .snap-section {
+  border-top: 1px solid #ddd;
+  background-color: #ffffff;
+}
+
+/* Button (optional if you later add interaction) */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+.footer-cta {
+  background: linear-gradient(to right, #1a6f8a, #2596be);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-cta .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #1a6f8a;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-cta .btn:hover {
+  background-color: #e0f2ff;
+  color: #003366;
+}
+
+.footer-image {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.footer-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

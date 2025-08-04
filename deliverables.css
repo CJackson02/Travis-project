@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  background-color: #f1f9fd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+}
+
+main.content {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+main.content h1 {
+  font-size: 2.2rem;
+  color: #002244;
+  margin-bottom: 0.75rem;
+}
+
+main.content .disclaimer {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  color: #002244;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 1rem;
+}
+
+.download-link,
+.presentation-link {
+  display: block;
+  font-size: 0.95rem;
+  color: #002244;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.download-link:hover,
+.presentation-link:hover {
+  text-decoration: underline;
+  color: #005288;
+}
+
+nav.navbar {
+  background-color: #f1f9fd;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: Arial, sans-serif;
+}
+
+nav.navbar a {
+  color: #002244;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+nav.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.ppt-section {
+  margin-bottom: 5rem;
+}
+
+/* Section Divider */
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: #2596be;
+  margin: 1rem auto 2.5rem;
+  border-radius: 2px;
+}
+
+/* Enhanced Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Headings */
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1a6f8a;
+}
+
+/* Footer Style */
+.page-footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: #666;
+  font-size: 1rem;
+  border-top: 1px solid #ddd;
+}
